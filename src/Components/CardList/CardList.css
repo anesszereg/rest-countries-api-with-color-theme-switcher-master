@@ -1,0 +1,33 @@
+.flag-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .flag-list {
+        padding: 1rem 3rem;
+    }
+}
+
+.flag-list.dark {
+    background-color: #121212;
+    /* Replace with the actual value of $DarkModeBackground */
+}
+
+.flag-list__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 8rem;
+    gap: 4rem;
+
+
+}
+
+@media (max-width: 768px) {
+    .flag-list__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
